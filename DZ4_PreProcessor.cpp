@@ -1,5 +1,5 @@
-﻿#include <iostream>
-
+#include <iostream>
+#define _CRT_SECURE_NO_WARNINGS
 #define INTEGER
 
 
@@ -26,11 +26,9 @@ int main()
     cout << "Minimum element: " << Min(massive, size) << std::endl;
     cout << "Maximum element: " << Max(massive, size) << std::endl;
 
-    cout << "Sorting array...\n";
     SortMassive(massive, size);
     ShowMassive(massive, size);
 
-    cout << "Editing element at index 2...\n";
 
 #ifdef INTEGER
     EditMassive(massive, size, 2, 777);
